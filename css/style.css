@@ -1282,7 +1282,7 @@ footer {
   .search-border {
     border: 1px solid rgba(19, 35, 53, 0.22);
     border-radius: 12px;
-    background-color: #fff;
+    background: #fff;
   }
 
   .nav-top-social-btn {
@@ -1563,14 +1563,15 @@ footer {
   .ftr-col {
     margin-top: 2px;
   }
-   .footer-link, .footer-social-link {
+  .footer-link,
+  .footer-social-link {
     font-size: 1rem;
   }
   .footer-design,
-  .footer-copyright{
-    font-size: .9rem;
+  .footer-copyright {
+    font-size: 0.9rem;
   }
-    .bottom-row {
+  .bottom-row {
     margin-top: 0;
   }
 }
