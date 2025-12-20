@@ -45,9 +45,7 @@
                 </span>
                 <span class="d-inline-flex align-items-center ms-3">
                   <i class="ri-notification-3-fill me-1 notification-icon"></i>
-                  <span class="notification-title"
-                    >Notification</span
-                  >
+                  <span class="notification-title">Notification</span>
                 </span>
               </div>
               <small class="notification-subtitle"
@@ -68,100 +66,117 @@
               <small class="emergency-number">0484 7185000</small>
             </div>
           </div>
+
           <!-- Search + Socials -->
-          <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body rouded-4 border search-border">
+          <div class="card border-0 shadow-sm mb-3">
+            <div class="card-body header-top-card-body search-border">
               <div class="row g-2 align-items-center">
-                <div class="col-md-12">
+                <div class="col-12">
                   <div class="input-group">
                     <span class="input-group-text border-end-0">
                       <i class="ri-search-line"></i>
                     </span>
+
                     <input
                       type="text"
                       class="form-control border-start-0"
                       placeholder="Search here"
+                      aria-label="Search here"
                     />
-                    <button
-                      class="btn btn-outline-secondary nav-top-search-btn"
-                      type="button"
-                    >
-                      Search
-                      <i class="bi bi-mic"></i>
-                    </button>
+
+                    <div class="nav-top-social-wrapper position-relative">
+                      <button
+                        type="button"
+                        class="btn nav-top-social-btn nav-top-social-trigger"
+                      >
+                        Social
+                        <i class="ri-arrow-down-s-line ms-1"></i>
+                      </button>
+
+                      <!-- custom tooltip -->
+                      <div class="social-tooltip-menu">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                          <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                          <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                          <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                          <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                          <i class="ri-youtube-fill"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- body can still be overflow: hidden; -->
-
-          <div class="card-row-wrapper overflow-auto">
-            <div class="d-flex flex-nowrap">
-              <div class="card flex-shrink-0 me-3 top-card-width">
+          <div class="card-row-wrapper">
+            <div class="d-flex justify-content-between">
+              <div class="card me-2 top-card-width">
                 <a
                   href="#"
                   class="card-body d-flex flex-column justify-content-between"
                 >
-                  <div class="fw-semibold">Company</div>
+                  <p>Company</p>
                   <div class="text-end fs-3">
-                    <i class="ri-organization-chart"></i>
+                    <img
+                      class="header-linkss-icons"
+                      src="images/header-icon-1.avif"
+                    />
                   </div>
                 </a>
               </div>
 
-              <div class="card flex-shrink-0 me-3 top-card-width">
+              <div class="card me-2 top-card-width">
                 <a
                   href="#"
                   class="card-body d-flex flex-column justify-content-between"
                 >
-                  <div class="fw-semibold">News &amp; Media</div>
+                  <p>News &amp; Media</p>
                   <div class="text-end fs-3">
-                    <i class="ri-article-line"></i>
+                    <img
+                      class="header-linkss-icons"
+                      src="images/header-icon-2.avif"
+                    />
                   </div>
                 </a>
               </div>
 
-              <div class="card flex-shrink-0 me-3 top-card-width">
+              <div class="card me-2 top-card-width">
                 <a
                   href="#"
                   class="card-body d-flex flex-column justify-content-between"
                 >
-                  <div class="fw-semibold">Support</div>
+                  <p>Support</p>
                   <div class="text-end fs-3">
-                    <i class="ri-customer-service-line"></i>
+                    <img
+                      class="header-linkss-icons"
+                      src="images/header-icon-3.avif"
+                    />
                   </div>
                 </a>
               </div>
 
-              <div class="card flex-shrink-0 me-3 top-card-width">
+              <div class="card top-card-width">
                 <a
                   href="#"
                   class="card-body d-flex flex-column justify-content-between"
                 >
-                  <div class="fw-semibold">Contact</div>
-                  <div class="text-end fs-3"><i class="ri-phone-line"></i></div>
-                </a>
-              </div>
-
-              <div class="card flex-shrink-0 me-3 top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div class="fw-semibold">Links</div>
-                  <div class="text-end fs-3"><i class="ri-links-line"></i></div>
-                </a>
-              </div>
-
-              <div class="card flex-shrink-0 me-3 top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <div class="fw-semibold">Links</div>
-                  <div class="text-end fs-3"><i class="ri-links-line"></i></div>
+                  <p>Contact</p>
+                  <div class="text-end fs-3">
+                    <img
+                      class="header-linkss-icons"
+                      src="images/header-icon-4.avif"
+                    />
+                  </div>
                 </a>
               </div>
             </div>
@@ -1151,6 +1166,16 @@
         button.addEventListener("mouseleave", () => {
           maskFill.setAttribute("y", "66"); // Fill slides down
         });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+          (el) => new bootstrap.Tooltip(el)
+        );
       });
     </script>
   </body>
