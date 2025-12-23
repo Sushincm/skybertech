@@ -32,7 +32,7 @@ main {
   min-height: 100vh;
 }
 body {
-  background: radial-gradient(circle at center, #16273b 0%, #070f16 100%);
+  
   font-family: "Work Sans", sans-serif;
 }
 :root {
@@ -1126,12 +1126,13 @@ footer {
   }
   .hero-banner {
     height: 80vh;
+    border-radius: 12px;
   }
   .location-content-section {
     padding-top: 5%;
   }
   .location-content-right img {
-    width: 50%;
+    width: 100%;
     padding: 5% 0;
   }
   .text-blink-sec {
@@ -1306,8 +1307,8 @@ footer {
 
   /* main button */
   .nav-top-social-btn {
-    background-color: var(--color);
-    border-color: var(--color);
+    background-color: rgb(35, 81, 131);
+    border-color: rgb(35, 81, 131);
     color: #fff;
     transition: var(--ani);
     white-space: nowrap;
@@ -1470,6 +1471,22 @@ footer {
   .panel-text small {
     color: #222;
   }
+  .mob-shadow {
+    box-shadow: 0 0 10px #38383897;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .blink-para {
+    margin-bottom: 0;
+  }
+  body {
+    background-color: #fff;
+  }
+  .text-fade,
+  .custom-contact-box{
+    border-radius: 12px 12px 0 0;
+  }
 }
 
 @media (max-width: 795px) {
@@ -1504,6 +1521,9 @@ footer {
   #main-header {
     padding: 5px 0;
     box-shadow: 0 0 10px #00000036;
+  }
+  .location-fade-sec {
+    background-position: center right;
   }
 }
 
