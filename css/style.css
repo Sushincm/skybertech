@@ -1286,6 +1286,10 @@ footer {
   .header-linkss-icons {
     width: 32px;
   }
+  .top-card-width .card-body i {
+    color: #8a8a8a; 
+    font-size: 30px;
+  }
   .header-top-card-body,
   .search-border {
     border: 1px solid rgba(19, 35, 53, 0.22);
@@ -1329,7 +1333,7 @@ footer {
     outline: none !important;
     font-size: 13px;
   }
-  .mob-header-search-input::placeholder{
+  .mob-header-search-input::placeholder {
     color: #c4c4c4;
   }
   /* main button */
