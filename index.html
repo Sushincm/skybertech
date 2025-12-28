@@ -7,8 +7,8 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/osmo.css" />
     <!-- Owl-carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -19,163 +19,96 @@
 
   <body>
     <main>
-      <!-- Mob top bars -->
-      <div class="d-lg-none d-block mob-top-bar py-3">
-        <!-- Top bar -->
-        <div class="mobheader-container">
-          <div
-            class="header-notification d-flex align-items-center justify-content-between mb-3"
-          >
-            <!-- Left: Notification -->
-            <div class="notification notification-left d-flex flex-column">
-              <div
-                class="notification-title-row d-flex align-items-center mb-1 position-relative"
-              >
-                <span
-                  class="notification-count badge rounded-circle d-inline-flex align-items-center justify-content-center position-absolute"
-                >
-                  3
-                </span>
-                <span class="d-inline-flex align-items-center ms-3">
-                  <i class="ri-notification-3-fill me-1 notification-icon"></i>
-                  <span class="notification-title">Notification</span>
-                </span>
-              </div>
-              <small class="notification-subtitle"
-                >Wish you a Happy New year</small
-              >
-            </div>
+      <section class="d-lg-none d-md-block py-3 header-top-sec">
+        <div class="main-container">
+          <h4 class="studio-title mb-3">SkyberTech</h4>
 
-            <!-- Right: Emergency -->
-            <div class="notification notification-right text-end">
-              <div
-                class="emergency-title-row d-flex align-items-center justify-content-end mb-1"
-              >
-                <span class="d-inline-flex align-items-center">
-                  <i class="ri-phone-fill me-1 emergency-icon"></i>
-                  <span class="emergency-title">Call us</span>
-                </span>
-              </div>
-              <small class="emergency-number">0484 705000</small>
+          <!-- Horizontal scroll buttons (manual scroll) -->
+          <div class="studio-tabs overflow-auto mb-3">
+            <div class="d-flex flex-nowrap gap-2 studio-tabs-row">
+              <a href="#" class="studio-tab is-active">Company</a>
+              <a href="#" class="studio-tab">News & Media</a>
+              <a href="#" class="studio-tab">Support</a>
+              <a href="#" class="studio-tab">Contact</a>
+              <a href="#" class="studio-tab">Links</a>
             </div>
           </div>
 
-          <!-- Search + Socials -->
-          <div class="card border-0 mb-3 bg-transparent">
-            <div class="card-body header-top-card-body search-border shadow-sm">
-              <div class="row g-2 align-items-center">
-                <div class="col-12">
-                  <div class="input-group">
-                    <span class="input-group-text border-end-0 search-icon-bx">
-                      <i class="ri-search-line"></i>
-                    </span>
-
-                    <input
-                      type="text"
-                      class="form-control border-start-0 mob-header-search-input"
-                      placeholder="Search here"
-                      aria-label="Search here"
-                    />
-
-                    <div class="nav-top-social-wrapper position-relative">
-                      <button
-                        type="button"
-                        class="btn nav-top-social-btn nav-top-social-trigger ms-1"
-                      >
-                        Social
-                        <i class="ri-arrow-down-s-line ms-1"></i>
-                      </button>
-
-                      <!-- custom tooltip -->
-                      <div class="social-tooltip-menu">
-                        <a href="#" class="social-link" aria-label="Instagram">
-                          <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
-                          <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                          <i class="ri-linkedin-fill"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                          <i class="ri-twitter-x-line"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
-                          <i class="ri-youtube-fill"></i>
-                        </a>
-                      </div>
-                    </div>
+          <!-- Owl Carousel: items = 1 (each slide contains 2 images/cards) -->
+          <div class="owl-carousel studio-owl">
+            <!-- Slide 01 (two images/cards) -->
+            <div class="studio-slide">
+              <a href="#" class="studio-card">
+                <div
+                  class="studio-card-bg"
+                  style="background-image: url(images/company.avif)"
+                ></div>
+                <div class="studio-card-content">
+                  <div class="studio-card-title">
+                    <h3 class="mb-1">Company</h3>
+                  </div>
+                  <div class="studio-card-actions">
+                    <span class="studio-chip">Open</span>
+                    <span class="studio-chip">Click</span>
                   </div>
                 </div>
-              </div>
+              </a>
+
+              <a href="#" class="studio-card mt-3">
+                <div
+                  class="studio-card-bg"
+                  style="background-image: url('images/news&media.jpg')"
+                ></div>
+                <div class="studio-card-content">
+                  <div class="studio-card-title">
+                    <h3 class="mb-1">News & media</h3>
+                  </div>
+                  <div class="studio-card-actions">
+                    <span class="studio-chip">Open</span>
+                    <span class="studio-chip">Click</span>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
 
-          <div class="card-row-wrapper">
-            <div class="d-flex justify-content-between">
-              <div class="card me-2 top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <p>Company</p>
-                  <div class="text-end fs-3">
-                    <img
-                      class="header-linkss-icons"
-                      src="images/company.png"
-                    />
+            <!-- Slide 02 (two images/cards) -->
+            <div class="studio-slide">
+              <a href="#" class="studio-card">
+                <div
+                  class="studio-card-bg"
+                  style="background-image: url('images/support.jpg')"
+                ></div>
+                <div class="studio-card-content">
+                  <div class="studio-card-title">
+                    <h3 class="mb-1">Support</h3>
                   </div>
-                </a>
-              </div>
+                  <div class="studio-card-actions">
+                    <span class="studio-chip">Open</span>
+                    <span class="studio-chip">Click</span>
+                  </div>
+                </div>
+              </a>
 
-              <div class="card me-2 top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <p>News &amp; Media</p>
-                  <div class="text-end fs-3">
-                    <img
-                      class="header-linkss-icons"
-                      src="images/header-icon-2.png"
-                    />
+              <a href="#" class="studio-card mt-3">
+                <div
+                  class="studio-card-bg"
+                  style="background-image: url('images/contact.jpg')"
+                ></div>
+                <div class="studio-card-content">
+                  <div class="studio-card-title">
+                    <h3 class="mb-1">Contact</h3>
                   </div>
-                </a>
-              </div>
-
-              <div class="card me-2 top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <p>Support</p>
-                  <div class="text-end fs-3">
-                    <img
-                      class="header-linkss-icons"
-                      src="images/header-icon-3.png"
-                    />
+                  <div class="studio-card-actions">
+                    <span class="studio-chip">Open</span>
+                    <span class="studio-chip">Click</span>
                   </div>
-                </a>
-              </div>
-
-              <div class="card top-card-width">
-                <a
-                  href="#"
-                  class="card-body d-flex flex-column justify-content-between"
-                >
-                  <p>Contact</p>
-                  <div class="text-end fs-3">
-                    <img
-                      class="header-linkss-icons"
-                      src="images/header-icon-4.png"
-                    />
-                  </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <header id="main-header">
         <div class="main-container">
           <div class="d-flex align-items-center justify-content-between">
@@ -277,7 +210,7 @@
             <ul class="list-unstyled mb-0">
               <li class="panel-item">
                 <div class="panel-icon">
-                  <img src="images/duabi-flag.png">
+                  <img src="images/duabi-flag.png" />
                 </div>
                 <div class="panel-text">
                   <h6 class="mb-0">Dubai</h6>
@@ -287,7 +220,7 @@
 
               <li class="panel-item">
                 <div class="panel-icon">
-                  <img src="images/india-flag.png" alt="">
+                  <img src="images/india-flag.png" alt="" />
                 </div>
                 <div class="panel-text">
                   <h6 class="mb-0">India</h6>
@@ -297,7 +230,10 @@
 
               <li class="panel-item">
                 <div class="panel-icon">
-                 <img src="images/united-kingdom-flag.png" alt="united-kingdom-flag">
+                  <img
+                    src="images/united-kingdom-flag.png"
+                    alt="united-kingdom-flag"
+                  />
                 </div>
                 <div class="panel-text">
                   <h6 class="mb-0">UK</h6>
