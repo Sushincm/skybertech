@@ -1272,6 +1272,7 @@ footer {
     position: relative;
     transform: translateY(10px);
     transition: transform 0.25s ease;
+    margin-bottom: 10px;
   }
 
   .mobile-contact-panel.is-open .mobile-contact-inner {
