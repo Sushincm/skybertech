@@ -22,24 +22,5 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
-  //  Header top  owl carousel
-  $(function () {
-    $(".studio-owl").owlCarousel({
-      loop: true,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 3500,
-      autoplayHoverPause: true,
-
-      stagePadding: 0,
-      margin: 10,
-
-      responsive: {
-        0: { items: 1 },
-        550: { items: 2 },
-        991: { items: 3 },
-      },
-    });
-  });
+  
 });

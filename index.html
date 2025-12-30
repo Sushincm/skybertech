@@ -14,98 +14,127 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <main>
-      <section class="d-lg-none d-md-block py-3 header-top-sec">
+      <section class="skyber-top d-block d-lg-none">
         <div class="main-container">
-          <h4 class="studio-title mb-3">SkyberTech</h4>
+          <!-- Top row -->
+          <div class="skyber-topbar d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <a
+                href="#"
+                class="skyber-icon-btn skyber-notify"
+                aria-label="Notifications"
+              >
+                <i class="ph ph-bell"></i>
+                <span class="skyber-dot"></span>
+              </a>
+            </div>
 
-          <!-- Horizontal scroll buttons (manual scroll) -->
-          <div class="studio-tabs overflow-auto mb-3">
-            <div class="d-flex flex-nowrap gap-2 studio-tabs-row">
-              <a href="#" class="studio-tab">Company</a>
-              <a href="#" class="studio-tab">News & Media</a>
-              <a href="#" class="studio-tab">Support</a>
-              <a href="#" class="studio-tab">Contact</a>
-              <a href="#" class="studio-tab">Links</a>
+            <div class="skyber-brand">SKYBERTECH</div>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-between skyber-touch-row" 
+          >
+            <div class="d-flex align-items-center skyber-touch-left gap-3">
+              <a
+                href="#"
+                class="skyber-icon-btn skyber-notify"
+                aria-label="Notifications"
+              >
+                <i class="ph ph-hand"></i>
+              </a>
+              <span class="skyber-touch-text">Touching</span>
+            </div>
+
+            <div class="skyber-touch-right">
+              <span class="skyber-touch-247">24/7</span>
+
+              <span class="skyber-touch-live">
+                <span class="skyber-touch-live-dot"></span>
+                Live
+              </span>
             </div>
           </div>
 
-          <!-- Owl Carousel: items = 1 (each slide contains 2 images/cards) -->
-          <div class="owl-carousel studio-owl">
-            <!-- Slide 01 (two images/cards) -->
-            <div class="studio-slide">
-              <a href="#" class="studio-card">
-                <div
-                  class="studio-card-bg"
-                  style="background-image: url(images/company.avif)"
-                ></div>
-                <div class="studio-card-content">
-                  <div class="studio-card-title">
-                    <h3 class="mb-1">Company</h3>
-                  </div>
-                  <div class="studio-card-actions">
-                    <span class="studio-chip">Open</span>
-                    <span class="studio-chip">Click</span>
-                  </div>
-                </div>
-              </a>
-
-              <a href="#" class="studio-card mt-3">
-                <div
-                  class="studio-card-bg"
-                  style="background-image: url('images/news&media.jpg')"
-                ></div>
-                <div class="studio-card-content">
-                  <div class="studio-card-title">
-                    <h3 class="mb-1">News & media</h3>
-                  </div>
-                  <div class="studio-card-actions">
-                    <span class="studio-chip">Open</span>
-                    <span class="studio-chip">Click</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Slide 02 (two images/cards) -->
-            <div class="studio-slide">
-              <a href="#" class="studio-card">
-                <div
-                  class="studio-card-bg"
-                  style="background-image: url('images/support.jpg')"
-                ></div>
-                <div class="studio-card-content">
-                  <div class="studio-card-title">
-                    <h3 class="mb-1">Support</h3>
-                  </div>
-                  <div class="studio-card-actions">
-                    <span class="studio-chip">Open</span>
-                    <span class="studio-chip">Click</span>
-                  </div>
-                </div>
-              </a>
-
-              <a href="#" class="studio-card mt-3">
-                <div
-                  class="studio-card-bg"
-                  style="background-image: url('images/contact.jpg')"
-                ></div>
-                <div class="studio-card-content">
-                  <div class="studio-card-title">
-                    <h3 class="mb-1">Contact</h3>
-                  </div>
-                  <div class="studio-card-actions">
-                    <span class="studio-chip">Open</span>
-                    <span class="studio-chip">Click</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+          <!-- Title + para -->
+          <div class="skyber-hero">
+            <h2 class="skyber-title mb-2">Connecting Beyond Words</h2>
+            <p class="skyber-desc mb-0">
+              Explore smarter support and faster communication with SKYBERTECH
+              solutions.
+            </p>
           </div>
+
+          <!-- Hash background stats block -->
+          <div class="skyber-stats-wrap">
+            <div class="skyber-stats-inner">
+              <!-- 2 stats -->
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="skyber-stat-card">
+                    <div class="skyber-stat-label">Satisfied Customers</div>
+                    <div class="skyber-stat-num">300</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="skyber-stat-card">
+                    <div class="skyber-stat-label">Projects</div>
+                    <div class="skyber-stat-num">250</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Enquiry + success circle -->
+              <div class="skyber-bottom-card mt-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="skyber-mini-icon">
+                      <i class="ph ph-headset"></i>
+                    </span>
+                    <div class="skyber-bottom-title">Enquiry Now</div>
+                  </div>
+
+                  <a href="#" class="skyber-go" aria-label="Open">
+                    <i class="ph ph-arrow-up-right"></i>
+                  </a>
+                </div>
+
+                <div class="row g-3 mt-2 align-items-center">
+                  <div class="col-6">
+                    <div class="skyber-users-box">
+                      <div class="skyber-users-label">Support Team</div>
+                      <div class="d-flex align-items-center gap-2 mt-2">
+                        <span class="skyber-avatar"></span>
+                        <span class="skyber-avatar"></span>
+                        <span class="skyber-avatar"></span>
+                        <span class="skyber-avatar"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 d-flex justify-content-end">
+                    <div class="skyber-success-ring">
+                      <div class="skyber-success-inner">
+                        <div class="skyber-success-num">59%</div>
+                        <div class="skyber-success-sub">Success rate</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /inner -->
+          </div>
+          <!-- /wrap -->
         </div>
       </section>
 
