@@ -1125,8 +1125,10 @@ footer {
   }
   .hero-banner {
     height: 80vh;
-    border-radius: 15px 15px 0 0;
+    border-radius: 26px 26px 0 0;
+    background-color: #eeeae7;
   }
+
   .location-content-section {
     padding-top: 5%;
   }
@@ -1332,7 +1334,7 @@ footer {
     margin-bottom: 0;
   }
   body {
-    background-color: #fff;
+    background-color: #eeeae7;
   }
   .text-fade,
   .custom-contact-box {
@@ -1344,33 +1346,14 @@ footer {
 
   .skyber-top {
     background-image: url("../images/header-top-bg.png");
-    border-radius: 0 0 26px 26px;
+    padding-bottom: 70px;
     overflow: hidden;
     position: relative;
+    background-position: center;
+    background-size: cover;
   }
-
-  .skyber-top::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.18;
-    background-image: radial-gradient(
-        circle at 20% 20%,
-        rgba(255, 255, 255, 0.35) 1px,
-        transparent 2px
-      ),
-      radial-gradient(
-        circle at 80% 40%,
-        rgba(255, 255, 255, 0.25) 1px,
-        transparent 2px
-      );
-    background-size: 120px 120px;
-    pointer-events: none;
-  }
-
   .skyber-topbar {
     position: relative;
-    padding: 0 6px;
   }
 
   .skyber-icon-btn {
@@ -1390,7 +1373,12 @@ footer {
     transform: translateY(-1px);
     background: rgba(255, 255, 255, 0.5);
   }
-
+  .skyber-hand {
+    background-color: white;
+  }
+  .skyber-hand img {
+    padding: 9px;
+  }
   .skyber-notify {
     position: relative;
   }
@@ -1404,8 +1392,8 @@ footer {
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.7);
   }
-  .skyber-touch-row{
-    padding-top: 20px;
+  .skyber-touch-row {
+    padding-top: 30px;
   }
   .skyber-brand {
     font-weight: 700;
@@ -1414,7 +1402,7 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
-    border-bottom: 1px solid rgb(146, 165, 190);
+    border-bottom: 1px solid rgb(250, 162, 143);
     padding-bottom: 5px;
   }
 
@@ -1423,14 +1411,14 @@ footer {
     align-items: center;
     gap: 8px;
     color: rgba(0, 0, 0, 0.85);
-    font-weight: 700;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    padding: 10px;
   }
 
   .skyber-247 {
-    background: rgba(255, 255, 255, 0.35);
-    border-radius: 999px;
-    padding: 6px 10px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .skyber-live {
@@ -1451,70 +1439,53 @@ footer {
     background: #bff3d1;
   }
 
-
   .skyber-hero {
     position: relative;
-    padding: 18px 6px 0;
+    padding-top: 30px;
   }
 
   .skyber-title {
-    font-size: 25px;
-    line-height: 1.05;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.9);
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #1b1511;
     margin: 0;
   }
 
   .skyber-desc {
     max-width: 36ch;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 13.5px;
-  }
-
-  .skyber-stats-wrap {
-    margin-top: 18px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 24px;
-    padding: 14px;
-  }
-
-  .skyber-stats-inner {
-    background: repeating-linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.06) 0 2px,
-      transparent 2px 10px
-    );
-    border-radius: 18px;
-    padding: 14px;
+    color: #000;
+    font-size: 14px;
   }
 
   .skyber-stat-card {
-    background: rgba(255, 255, 255, 0.55);
+    background-color: #e4d8cf;
     border-radius: 16px;
     padding: 14px 14px 12px;
     height: 100%;
     transition: var(--anim);
   }
-
-  .skyber-stat-card:hover {
-    background: rgba(255, 255, 255, 0.8);
-  }
-
   .skyber-stat-label {
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.65);
-    font-weight: 600;
+    color: #000;
+    height: 36px;
   }
-
+  .skyber-stat-label i {
+    font-size: 38px;
+    color: #3c6f80;
+  }
+  .skyber-stat-label-time i {
+    color: #ee5e40;
+  }
   .skyber-stat-num {
     margin-top: 8px;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.9);
   }
 
   .skyber-bottom-card {
-    background: rgba(255, 255, 255, 0.55);
+    background-color: #e4d8cf;
     border-radius: 18px;
     padding: 12px;
   }
@@ -1531,14 +1502,14 @@ footer {
   }
 
   .skyber-bottom-title {
-    font-weight: 800;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.85);
   }
 
   .skyber-go {
     width: 40px;
     height: 40px;
-    border-radius: 12px;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1552,13 +1523,13 @@ footer {
   }
 
   .skyber-users-box {
-    background: rgba(255, 255, 255, 0.35);
     border-radius: 14px;
     padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
   .skyber-users-label {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
   }
   .skyber-avatar {
@@ -1572,26 +1543,47 @@ footer {
     width: 132px;
     height: 132px;
     border-radius: 50%;
-    border: 3px solid rgba(0, 0, 0, 0.85);
+    border: 4px solid #9d4c2e;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.35);
   }
   .skyber-success-inner {
     text-align: center;
   }
   .skyber-success-num {
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.9);
     line-height: 1;
   }
   .skyber-success-sub {
     margin-top: 6px;
     font-size: 12px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    color: #000;
+  }
+  .skyber-second-top {
+    background-color: #eeeae7;
+    border-radius: 26px 26px 0 0;
+    margin-top: -30px;
+    position: relative;
+    padding: 40px 0;
+    padding-bottom: 60px;
+  }
+  .skyber-users-box img {
+    width: 35px;
+    height: 35px;
+  }
+  .skyber-avatars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 32px);
+    justify-content: space-between;
+  }
+
+  .skyber-avatar {
+    width: 32px;
+    height: 32px;
   }
 }
 
