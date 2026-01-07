@@ -1346,7 +1346,7 @@ footer {
 
   .skyber-top {
     background-image: url("../images/header-top-bg.png");
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     overflow: hidden;
     position: relative;
     background-position: center;
@@ -1368,7 +1368,10 @@ footer {
     color: #000000;
     transition: var(--anim);
   }
-
+  .skyber-hand{
+    width: 55px;
+    height: 55px;
+  }
   .skyber-icon-btn:hover {
     transform: translateY(-1px);
     background: rgba(255, 255, 255, 0.5);
@@ -1393,7 +1396,7 @@ footer {
     border: 2px solid rgba(255, 255, 255, 0.7);
   }
   .skyber-touch-row {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .skyber-brand {
     font-weight: 700;
@@ -1414,7 +1417,7 @@ footer {
     font-weight: 600;
     background: rgba(255, 255, 255, 0.35);
     border-radius: 999px;
-    padding: 10px;
+    padding: 5px 10px;
   }
 
   .skyber-247 {
@@ -1480,7 +1483,7 @@ footer {
   .skyber-stat-num {
     margin-top: 8px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.9);
   }
 
@@ -1553,7 +1556,7 @@ footer {
   }
   .skyber-success-num {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.9);
     line-height: 1;
   }
@@ -1572,8 +1575,8 @@ footer {
     padding-bottom: 60px;
   }
   .skyber-users-box img {
-    width: 35px;
-    height: 35px;
+    width: 80%;
+    height: 50px;
   }
   .skyber-avatars-grid {
     display: grid;
@@ -1584,6 +1587,11 @@ footer {
   .skyber-avatar {
     width: 32px;
     height: 32px;
+  }
+  .skyber-avatar-label{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -1691,6 +1699,9 @@ footer {
   }
   .bottom-row {
     margin-top: 0;
+  }
+  .skyber-avatar-label{
+    font-size: 9px;
   }
 }
 @media (max-width: 400px) {
