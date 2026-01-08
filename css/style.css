@@ -1017,6 +1017,40 @@ footer {
   text-decoration: underline;
 }
 
+/* About us */
+.mission-sec{
+  background: #f4f0e8;
+  padding: 10% 0;
+}
+
+.mission-badge{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.04);
+  color: rgba(0,0,0,.7);
+  font-size: 14px;
+}
+
+.mission-copy{
+  max-width: 760px;
+  color: rgba(0,0,0,.72);
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.word{
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(6px);
+  will-change: transform, opacity, filter;
+}
+
+
+
+
+
 /* responsive */
 @media (max-width: 1170px) {
   .banner-content {
