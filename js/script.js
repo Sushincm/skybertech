@@ -49,14 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const h3 = document.getElementById("animated-text");
 
-  // Get the raw text, trim edges and collapse internal whitespace
+
   const fullText = h3.textContent
-    .replace(/\s+/g, " ") // collapse any sequence of whitespace into a single space
-    .trim(); // remove leading and trailing spaces
+    .replace(/\s+/g, " ")
+    .trim(); 
 
-  h3.innerHTML = ""; // clear original
+  h3.innerHTML = ""; 
 
-  // Create spans; use &nbsp; for spaces so they render with width
+ 
   for (const ch of fullText) {
     const span = document.createElement("span");
 
