@@ -1188,8 +1188,9 @@ footer {
   font-size: 14px;
   line-height: 1.75;
 }
-.subpage-banner {
+.subpage-banner video {
   height: 550px;
+  object-fit: cover;
 }
 .subheader {
   position: absolute;
