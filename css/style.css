@@ -1141,7 +1141,7 @@ footer {
 
 .core-index {
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(255, 255, 255, 0.48);
 }
 
 .core-item-title {
@@ -1159,11 +1159,10 @@ footer {
 }
 
 .core-list.border-top {
-   border-top-color: rgba(169, 169, 169, 0.123) !important;
+  border-bottom-color: rgba(169, 169, 169, 0.123) !important;
 }
 .core-list .border-bottom {
-   border-top-color: rgba(169, 169, 169, 0.123) !important;
-
+  border-bottom-color: rgba(169, 169, 169, 0.123) !important;
 }
 
 .about-sec {
@@ -1229,6 +1228,40 @@ footer {
   }
 }
 @media (max-width: 991.98px) {
+  .subheader h2 {
+    font-size: 2.5rem;
+  }
+  .subpage-banner video {
+    height: 500px;
+  }
+  .subheader {
+    top: 50%;
+  }
+  .about-kicker,
+  .about-name {
+    font-size: 22px;
+  }
+  .about-text {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .we-line {
+    width: 75%;
+    font-size: 25px;
+  }
+  .core-index {
+    display: none;
+  }
+  .core-item-title {
+    font-size: 22px;
+  }
+  .core-title {
+    font-size: 25px;
+    margin-top: 30px;
+  }
   #logo-img {
     width: 120px;
   }
@@ -1887,6 +1920,9 @@ footer {
   }
   .skyber-avatar-label {
     font-size: 11px;
+  }
+  .we-line {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
