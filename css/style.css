@@ -84,11 +84,9 @@ a {
   text-decoration: none;
 }
 main {
-  overflow: hidden;
   width: 100%;
 }
 section {
-  overflow: hidden;
   padding: 5% 0;
 }
 .main-container {
@@ -1207,7 +1205,6 @@ footer {
   background: #fff;
   color: #333;
   padding-top: 10%;
-
 }
 .contact-border-top {
   border-top: 1px solid #ccc;
@@ -1271,6 +1268,59 @@ footer {
   background-repeat: no-repeat;
   background-position: right 0 center;
   background-size: 16px;
+}
+
+/* Service Page */
+.levels-sec {
+  background: #fff;
+  color: #333;
+}
+
+/* Custom border color utility */
+.border-color-light {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Left side typography */
+.level-num,
+.level-label {
+  font-family: serif;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Right side typography */
+.level-headline {
+  font-family: serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #555;
+  max-width: 90%;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-val {
+  font-size: 1rem;
+  color: #222;
+}
+
+.overview-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 95%;
+}
+.services-left-col {
+  height: 100%;
+}
+.sticky-services-left {
+  top: 100px;
 }
 
 /* responsive */
@@ -1883,9 +1933,20 @@ footer {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .contact-sec{
+  .contact-sec {
     padding-top: 5%;
   }
+  .level-content,.left-heading-padding {
+    padding: 3% !important;
+  }
+  .level-num,
+  .level-label {
+    font-size: 1.4rem;
+  }
+  .level-headline {
+    font-size: 2rem;
+  }
+
 }
 
 @media (max-width: 795px) {
@@ -1998,6 +2059,13 @@ footer {
   }
   .we-line {
     width: 100%;
+  }
+  .subheader {
+    width: 100%;
+    text-align: center;
+  }
+  .level-headline {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 400px) {
