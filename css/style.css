@@ -86,6 +86,10 @@ a {
 main {
   width: 100%;
 }
+body {
+  overflow-x: hidden;
+  overflow-y: visible; 
+}
 section {
   padding: 5% 0;
 }
@@ -1204,7 +1208,7 @@ footer {
 .contact-sec {
   background: #fff;
   color: #333;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .contact-border-top {
   border-top: 1px solid #ccc;
@@ -1322,7 +1326,32 @@ footer {
 .sticky-services-left {
   top: 100px;
 }
+/* Typography */
+.contact-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #132335;
+}
 
+.contact-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.contact-value {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #132335;
+  font-weight: 400;
+}
 /* responsive */
 @media (max-width: 1170px) {
   .banner-content {
@@ -1352,6 +1381,12 @@ footer {
 @media (max-width: 991.98px) {
   .subheader h2 {
     font-size: 2.5rem;
+  }
+  .contact-heading{
+    font-size: 2.3rem;
+  }
+  .contact-link{
+    align-self: flex-start;
   }
   .subpage-banner video {
     height: 500px;
@@ -1666,7 +1701,7 @@ footer {
   }
   .mob-shadow {
     box-shadow: 0 0 10px #38383897;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
     border-radius: 12px;
   }
@@ -1936,7 +1971,8 @@ footer {
   .contact-sec {
     padding-top: 5%;
   }
-  .level-content,.left-heading-padding {
+  .level-content,
+  .left-heading-padding {
     padding: 3% !important;
   }
   .level-num,
@@ -1946,7 +1982,6 @@ footer {
   .level-headline {
     font-size: 2rem;
   }
-
 }
 
 @media (max-width: 795px) {
