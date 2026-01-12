@@ -1,26 +1,25 @@
-gsap.registerPlugin(ScrollTrigger);
+document.addEventListener("DOMContentLoaded", () => {
+  function wrapWords(el) {
+    el.querySelectorAll("p").forEach((p) => {
+      const words = p.textContent.trim().split(/\s+/);
+      p.innerHTML =
+        words.map((w) => `<span class="word">${w}</span>`).join(" ") + " ";
+    });
+  }
 
-function wrapWords(el) {
-  el.querySelectorAll('p').forEach(p => {
-    const words = p.textContent.trim().split(/\s+/);
-    p.innerHTML = words.map(w => `<span class="word">${w}</span>`).join(' ') + ' ';
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.js-word-reveal').forEach(section => {
+  document.querySelectorAll(".js-word-reveal").forEach((section) => {
     wrapWords(section);
 
-    const words = section.querySelectorAll('.word');
+    const words = section.querySelectorAll(".word");
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
         start: "top 70%",
         end: "bottom 40%",
-        scrub: true,          
-        pinSpacing: true
-      }
+        scrub: true,
+        pinSpacing: true,
+      },
     });
 
     tl.fromTo(
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         y: 0,
         filter: "blur(0px)",
         ease: "none",
-        stagger: 0.02
+        stagger: 0.02,
       }
     );
   });

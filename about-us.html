@@ -17,56 +17,51 @@
 </head>
 
 <body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>loading..</p>
+  </div>
   <main>
-          <section class="skyber-top skyber-top-sub  d-block d-lg-none">
-        <div class="main-container">
-          <div class="skyber-topbar d-flex align-items-center gap-4">
-            <div class="d-flex align-items-center gap-2">
-              <a
-                href="#"
-                class="skyber-icon-btn skyber-notify"
-                aria-label="Notifications"
-              >
-                <i class="ph ph-bell"></i>
-                <span class="skyber-dot"></span>
-              </a>
-            </div>
-
-            <div class="skyber-brand">Happy New Year</div>
+    <section class="skyber-top skyber-top-sub  d-block d-lg-none">
+      <div class="main-container">
+        <div class="skyber-topbar d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="skyber-icon-btn skyber-notify" aria-label="Notifications">
+              <i class="ph ph-bell"></i>
+              <span class="skyber-dot"></span>
+            </a>
           </div>
 
-          <div
-            class="d-flex align-items-center justify-content-between skyber-touch-row"
-          >
-            <div class="skyber-status">
-              <span class="skyber-247">24/7</span>
-              <span class="skyber-live"> Support </span>
-            </div>
+          <div class="skyber-brand">Happy New Year</div>
+        </div>
 
-            <div class="d-flex align-items-center skyber-touch-left gap-2">
-              <span class="skyber-touch-text text-white">Touching</span>
-              <a
-                href="#"
-                class="skyber-icon-btn skyber-notify skyber-hand"
-                aria-label="Notifications"
-              >
-                <img src="images/touching.png" alt="Touching" />
-              </a>
-            </div>
+        <div class="d-flex align-items-center justify-content-between skyber-touch-row">
+          <div class="skyber-status">
+            <span class="skyber-247">24/7</span>
+            <span class="skyber-live"> Support </span>
           </div>
 
-          <div class="skyber-hero">
-            <h2 class="skyber-title mb-2">
-              Connecting <br />
-              Beyond Words
-            </h2>
-            <p class="skyber-desc mb-0">
-              Explore smarter support and faster communication with SKYBERTECH
-              solutions.
-            </p>
+          <div class="d-flex align-items-center skyber-touch-left gap-2">
+            <span class="skyber-touch-text text-white">Touching</span>
+            <a href="#" class="skyber-icon-btn skyber-notify skyber-hand" aria-label="Notifications">
+              <img src="images/touching.png" alt="Touching" />
+            </a>
           </div>
         </div>
-      </section>
+
+        <div class="skyber-hero">
+          <h2 class="skyber-title mb-2">
+            Connecting <br />
+            Beyond Words
+          </h2>
+          <p class="skyber-desc mb-0">
+            Explore smarter support and faster communication with SKYBERTECH
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
     <header id="main-header">
       <div class="main-container">
         <div class="d-flex align-items-center justify-content-between">
@@ -485,6 +480,9 @@
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/lenis.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/aboutUparallaxsectionReveal.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/owl-custom.js"></script>
   <script src="js/image-zoom-effect.js"></script>
@@ -499,20 +497,6 @@
   <script src="js/hamburg-nav.js"></script>
   <script src="js/count.js"></script>
   <script src="js/wordbyWordAboutUs.js"></script>
-  <script src="js/aboutUparallaxsectionReveal.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const button = document.querySelector(".button-haptikos");
-      const maskFill = button.querySelector(".mask-fill");
-
-      button.addEventListener("mouseenter", () => {
-        maskFill.setAttribute("y", "0"); // Fill slides up
-      });
-      button.addEventListener("mouseleave", () => {
-        maskFill.setAttribute("y", "66"); // Fill slides down
-      });
-    });
-  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const tooltipTriggerList = document.querySelectorAll(

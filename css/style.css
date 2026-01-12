@@ -1093,7 +1093,7 @@ footer {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background-image: url("../images/about-us-section-bg.png");
+  background-image: url("../images/about-us-section-bg.avif");
   background-size: cover;
   background-position: center;
 }
@@ -1948,7 +1948,6 @@ footer {
     margin-top: -30px;
     position: relative;
     padding: 40px 0;
-    padding-bottom: 60px;
   }
   .skyber-users-box img {
     width: 80%;

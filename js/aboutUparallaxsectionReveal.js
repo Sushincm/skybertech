@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector(".webleieve");
   const lines = gsap.utils.toArray(".webleieve .we-line");
