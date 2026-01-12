@@ -88,7 +88,7 @@ main {
 }
 body {
   overflow-x: hidden;
-  overflow-y: visible; 
+  overflow-y: visible;
 }
 section {
   padding: 5% 0;
@@ -1328,7 +1328,7 @@ footer {
 }
 /* Typography */
 .contact-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 4.5rem;
   line-height: 0.95;
   font-weight: 400;
@@ -1382,14 +1382,15 @@ footer {
   .subheader h2 {
     font-size: 2.5rem;
   }
-  .contact-heading{
+  .contact-heading {
     font-size: 2.3rem;
   }
-  .contact-link{
+  .contact-link {
     align-self: flex-start;
   }
   .subpage-banner video {
     height: 500px;
+    margin-top: -50px;
   }
   .subheader {
     top: 50%;
@@ -1981,6 +1982,12 @@ footer {
   }
   .level-headline {
     font-size: 2rem;
+  }
+  .skyber-top-sub {
+    padding-bottom: 60px !important;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    z-index: 10;
   }
 }
 
