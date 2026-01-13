@@ -56,6 +56,60 @@ html {
   text-transform: uppercase;
 }
 
+/* Back To Top */
+.scrollToTopBtn {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 48px;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 110px;
+  right: 2%;
+  z-index: 999;
+  opacity: 2;
+  transform: translateY(200px);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+  transition: var(--ani);
+}
+
+.scrollToTopBtn img {
+  width: 30px;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #16273b;
+}
+
+.scrollToTopBtn:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+.scrollToTopBtn:focus,
+.scrollToTopBtn:focus-visible {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* -----------  */
+
 /* MAIN CONTENT */
 #content {
   padding: 50px;
@@ -2107,6 +2161,11 @@ footer {
   }
   .level-headline {
     font-size: 1.4rem;
+  }
+}
+@media(max-width: 450.5px){
+  .dynamic-text{
+    display: block;
   }
 }
 @media (max-width: 400px) {
